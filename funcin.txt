@@ -1,0 +1,12 @@
+
+        postulado.autores.push(autor)
+        postulado.nameSubDoc.push({
+            tieneLibretaMilitar,
+            estadoLaboral,
+            programaGobierno,
+            salarioAspira,
+            perfilLaboral,
+            aceptaTerminos,
+            autores
+        })
+        postulado.nameSubDoc.autores.push(autor)

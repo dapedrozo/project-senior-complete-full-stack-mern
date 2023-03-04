@@ -1,0 +1,95 @@
+const formatString = new Schema({
+    s:{
+        type: String,
+        trim: true
+    }
+},{_id:false})
+
+const llenadoPor = new Schema({llenadoPor:
+    {
+        type: formatString,
+        required: true
+    }
+},{
+    timestamps:{createdAt:false, updatedAt:true}
+})
+
+const estudio = new Schema({
+    nombreTitulo: formatString,
+    //profesional, tecnico, etc
+    nivelEstudio: formatString,
+    //n semestres aprobados por ejemplo
+    nivelEscolaridadAprobado: Number,
+    //semestres, dias, etc
+    definicionNivel: formatString,
+    nombreInstituEducativa: formatString,
+    esExtranjero: Boolean,
+    finalizado: Boolean,
+    fechaInicio: Date,
+    fechaGrado: Date,
+    autores: [llenadoPor]
+},{timestamps:true});
+
+const experiencia = new Schema({
+    profesion: formatString,
+    funcion: formatString,
+    nombreEmpresa: formatString,
+    telefonoEmpresa: formatString,
+    emailEmpresa: formatString,
+    celularEmpresa: formatString,
+    cargo: formatString,
+    autores: [llenadoPor]
+},{timestamps:true});
+
+const idioma = new Schema({
+    idioma: formatString,
+    nivelIdioma: formatString,
+    autores: [llenadoPor]
+},{timestamps:true});
+
+const testPsicologico=new Schema({
+    pregunta1: formatString,
+    autores: [llenadoPor]
+},{timestamps:true});
+
+const infoGeneral = new Schema({
+    tieneLibretaMilitar: Boolean,
+    estadoLaboral: formatString,
+    programaGobierno: formatString,
+    salarioAspira: Number,
+    perfilLaboral: formatString,
+    aceptaTerminos: Boolean,
+    autores: [llenadoPor]
+})
+
+const postuladoSchema= new Schema({
+    tipoDoc: {
+        type: String,
+        required: true
+    },
+    numDoc: {
+        type: String,
+        required: true
+    },
+    usuario: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    email: formatString,
+    contacto: [formatString],
+    infoGeneral: [infoGeneral],
+    estudios:[estudio],
+    experiencias:[experiencia],
+    idiomas: [idioma],
+    testPsico: testPsicologico,
+    autores: [llenadoPor]},{timestamps:true});
+
+
+cosas proyecto
+http://www.uxables.com/diseno-ux-ui/que-es-la-metodologia-design-sprint-y-sus-fases/
+https://babel.es/es/Media/Blog/Diciembre-2016/Buenas-practicas-para-una-gran-experiencia-de-usua
+http://www.scielo.org.co/pdf/rium/v15n28/v15n28a07.pdf
+escribir carta a agriot para desempeñarme como estudiante de proyecto de grado buenas tardes a quien corresponda, 
+mi nombre es tal del programa tal de la unab y expreso mi voluntad para asociar mi proyecto de grado a la iniciativa agriot o quiero pertenecer a agriot mediante 
+agriot@unba.edu.co

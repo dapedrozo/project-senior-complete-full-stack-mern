@@ -1,0 +1,142 @@
+info postulado
+estadolaboral
+{
+    "estadolaboral":"Ama de Casa"
+},
+{
+    "estadolaboral":"Desempleado"
+},
+{
+    "estadolaboral":"Empleado"
+},
+{
+    "estadolaboral":"Independiente"
+}
+
+programasgobierno
+{
+    "programasgobierno":"Ninguno"
+},
+{
+    "programasgobierno":"40 Mil Primeros Empleos"
+},
+{
+    "programasgobierno":"Victimas Conflicto Armado"
+},
+{
+    "programasgobierno":"40 Mil Primeros Empleos y Victimas Conflicto Armado"
+}
+
+minrangosalarial
+{
+    "minrangosalarial":"1"
+},
+{
+    "minrangosalarial":"1.5"
+},
+{
+    "minrangosalarial":"2"
+},
+{
+    "minrangosalarial":"2.5"
+},
+{
+    "minrangosalarial":"3"
+},
+{
+    "minrangosalarial":"3.5"
+},
+{
+    "minrangosalarial":"4"
+},
+{
+    "minrangosalarial":"4.5"
+},
+{
+    "minrangosalarial":"5"
+},
+{
+    "minrangosalarial":"5.5"
+},
+{
+    "minrangosalarial":"6"
+}
+
+escolaridades
+nivelestudio
+{
+    "nivelestudio":"Doctorado"
+},
+{
+    "nivelestudio":"Educacion media"
+},
+{
+    "nivelestudio":"Especializacion"
+},
+{
+    "nivelestudio":"Maestria"
+},
+{
+    "nivelestudio":"Profesional"
+},
+{
+    "nivelestudio":"Tecnico"
+},
+{
+    "nivelestudio":"Tecnologo"
+}
+
+nivelEscolaridadAprobado tipo number y dejarlo libre
+{
+    "nivelaprobado":"1"
+}
+
+definicionNivelEstudio 
+{
+    "nivelaprobado":"Años"
+},
+{
+    "nivelaprobado":"Semestres"
+},
+{
+    "nivelaprobado":"Trimestres"
+},
+{
+    "nivelaprobado":"Meses"
+},
+{
+    "nivelaprobado":"Semanas"
+},
+{
+    "nivelaprobado":"Días"
+},
+{
+    "nivelaprobado":"Horas"
+},
+
+
+experiencia laboral
+profesion tipo string y dejarlo en blanco
+{
+    "profesion":"Años"
+},
+
+idiomas
+nivelidioma
+{
+    "nivelIdiomas":"Nativo"
+},
+{
+    "nivelIdiomas":"Alto"
+},
+{
+    "nivelIdiomas":"Medio"
+},
+{
+    "nivelIdiomas":"Bajo"
+}
+
+idiomas dejarlo en blanco y tipo string
+{
+    "nombreIdioma":"Nativo"
+},
